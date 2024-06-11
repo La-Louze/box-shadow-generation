@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-shadow generation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container__parametres left">
+            <header><div class="title">box-shadow generation</div></header>
+
+            <div class="parametres__content">
+                <div class="scrolls_lines">
+                    <h1>Параметры теней</h1>
+                    <div class="scrolls">
+                        <div class="data_scroll">
+                            <h2>Размер</h2>
+                            <div class="size_scroll">
+                                <div class="size">
+                                    <h3>0px</h3>
+                                    <h3>100px</h3>
+                                </div>
+                                <input id="size_input" type="range" min="0" max="100" value="0">
+                            </div>
+                        </div>
+
+                        <div class="data_scroll">
+                            <h2>Размытие</h2>
+                            <div class="size_scroll">
+                                <div class="size">
+                                    <h3>0px</h3>
+                                    <h3>100px</h3>
+                                </div>
+                                <input id="blur_input" type="range" max="100" min="0" value="0">
+                            </div>
+                        </div>
+
+                        <div class="data_scroll">
+                            <h2>Проозрачность</h2>
+                            <div class="size_scroll">
+                                <div class="size">
+                                    <h3>100%</h3>
+                                    <h3>0%</h3>
+                                </div>
+                                <input id="opacity_input" type="range" step="0.001" max="1" min="0" value="1">
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                <div class="scrolls">
+                    <h1>Скругление углов блока</h1>
+                    <div class="size_scroll">
+                        <div class="size">
+                            <h3>0px</h3>
+                            <h3>100px</h3>
+                        </div>
+                        <input id="round_input" type="range" max="100" min="0">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container__parametres center">
+            <header class="container__parametres__header">
+                    <div>
+                        <img id="delete" src="images/delete.svg" alt="">
+                    </div>
+            </header>
+
+            <div class="box" id="box"></div>
+            <div class="box__scrolls">
+                <div class="scroll_vertical">
+                    <div class="sizeVertical">
+                        <h3>100px</h3> 
+                        <h3>-100px</h3>
+                    </div>
+                    <input id="y_input" class="vertical" type="range" max="100" min="-100">
+                </div>
+                <div class="size_scroll">
+                    <div class="size">
+                        <h3>-100px</h3>
+                        <h3>100px</h3>
+                    </div>
+                    <input id="x_input" type="range" max="100" min="-100">
+                </div>  
+
+            </div>
+
+        </div>
+
+        <div class="container__parametres right">
+
+            <div class="code">
+                <h1>Ваш CSS код</h1>
+                <div class="output_code"><div id="output_code" class="copy_code"></div></div>
+            </div>
+
+            <div class="block_color">
+                <h1>Настройка цвета</h1>
+                <div class="choose_color">
+                    <div class="color">
+                        <h2>Тени</h2>
+                        <input id="shadow_color" type="color">
+                    </div>
+                    <div class="color">
+                        <h2>Блока</h2>
+                        <input id="block_color" type="color">
+                    </div>
+                    <!-- <div class="color">
+                        <h2>Фона</h2>
+                        <input  id="background_color" type="color">
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="choose_shadows">
+                <h1>Примеры теней</h1>
+                <div class="exempel_shadow">
+                    <div id="shadow1" class="one"><h3>1</h3></div>
+                    <div id="shadow2" class="two"><h3>2</h3></div>
+                    <div id="shadow3" class="three"><h3>3</h3></div>
+                    <div id="shadow4" class="four"><h3>4</h3></div>
+                    <div id="shadow5" class="five"><h3>5</h3></div>
+                    <div id="shadow6" class="six"><h3>6</h3></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="js/script.js" defer></script>
+</html>
